@@ -1,4 +1,4 @@
-package com.awantunai.test.demo.repo.model;
+package com.awantunai.test.demo.repo.model.student;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

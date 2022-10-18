@@ -1,4 +1,4 @@
-package com.awantunai.test.demo.repo.model;
+package com.awantunai.test.demo.repo.model.student;
 
 import lombok.Data;
 

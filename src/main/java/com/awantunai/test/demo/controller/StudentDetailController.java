@@ -1,7 +1,9 @@
 package com.awantunai.test.demo.controller;
 
-import com.awantunai.test.demo.repo.model.Student;
-import com.awantunai.test.demo.repo.model.StudentDao;
+import com.awantunai.test.demo.dto.mapper.ModelMapper;
+import com.awantunai.test.demo.dto.request.StudentDetailRegisterRequest;
+import com.awantunai.test.demo.repo.model.student.Student;
+import com.awantunai.test.demo.repo.model.student.StudentDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,14 +11,15 @@ import java.util.List;
 
 @RestController
 @RequestMapping("student")
-@ControllerAdvice
-public class StudentController {
+public class StudentDetailController {
 
     private final StudentDao studentDao;
+    private final ModelMapper modelMapper;
 
     @Autowired
-    public StudentController(StudentDao studentDao) {
+    public StudentDetailController(StudentDao studentDao, ModelMapper modelMapper) {
         this.studentDao = studentDao;
+        this.modelMapper = modelMapper;
     }
 
     @GetMapping("{id}")
@@ -30,8 +33,8 @@ public class StudentController {
     }
 
     @PostMapping
-    public void saveStudent(@RequestBody Student student){
-        this.studentDao.addStudent(student);
+    public void saveStudent(@RequestBody StudentDetailRegisterRequest student){
+        this.studentDao.addStudent(modelMapper.map().map(student, Student.class));
     }
 
     @DeleteMapping("{id}")
