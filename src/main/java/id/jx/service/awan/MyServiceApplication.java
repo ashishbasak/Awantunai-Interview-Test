@@ -1,13 +1,13 @@
-package com.awantunai.test.demo;
+package id.jx.service.awan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class MyServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(MyServiceApplication.class, args);
 	}
 
 }

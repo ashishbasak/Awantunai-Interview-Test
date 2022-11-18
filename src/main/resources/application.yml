@@ -1,0 +1,11 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/awan_test?serverTimezone=Asia/Jakarta
+    username: root
+    password: 123456
+
+nameofservice-service: # This is main config of the app, rename the 'nameofservice' to your service name. (delete this comment after rename)
+  app-name: Awan Tunai
