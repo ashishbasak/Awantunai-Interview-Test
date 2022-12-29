@@ -1,1 +1,6 @@
 com/awantunai/test/demo/DemoApplication.class
+com/awantunai/test/demo/UserRepository.class
+com/awantunai/test/demo/UserService.class
+com/awantunai/test/demo/UserController.class
+com/awantunai/test/demo/UsedUsernameException.class
+com/awantunai/test/demo/User.class
