@@ -11,3 +11,16 @@ public class DemoApplication {
 	}
 
 }
+
+// login
+	// User {
+		// name
+		// year
+		// addreass
+		// password
+	// }
+// signup 
+	// User {
+	// 	name
+	// 	password
+	// }
